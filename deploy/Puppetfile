@@ -1,0 +1,12 @@
+forge "http://forge.puppetlabs.com"
+
+mod "familytracker", :path => "/vagrant"
+mod "users", :git => "https://github.com/simonmcc/puppet-users.git", :ref => 'master'
+#mod "users", :git => "git@github.com:simonmcc/puppet-users.git", :ref => 'master'
+
+mod "puppetlabs/apache"
+mod 'puppetlabs/mysql', '=2.1.0'
+
+mod 'dwerder/graphite'
+mod 'pdxcat/collectd'
+mod 'puppetlabs/apt'
